@@ -37,8 +37,8 @@ function Features() {
       title: 'Value for Money',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil',
       icon: (
-        <svg className="w-8 h-8 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
-          <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L12 8.343l3.172-3.172a4 4 0 115.656 5.656L12 20.828l-8.485-8.486a4 4 0 010-5.656z" clipRule="evenodd" />
+        <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       )
     },
@@ -57,9 +57,8 @@ function Features() {
       title: 'Cloud Support',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil',
       icon: (
-        <svg className="w-8 h-8 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M5.5 16a3.5 3.5 0 01-.362-6.98 4.5 4.5 0 018.724-1.339A3 3 0 0119.5 13a3 3 0 01-2.28 2.904A4.498 4.498 0 0013.5 12c-1.348 0-2.56.59-3.39 1.537a4.5 4.5 0 00-4.61 2.463z" />
-          <path d="M13.5 14a2.5 2.5 0 100 5h4a2 2 0 100-4h-4z" />
+        <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
         </svg>
       )
     }
