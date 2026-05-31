@@ -1,5 +1,5 @@
 import React from 'react'
-import contactImg from './assets/contact.svg' 
+import contactImg from '../../../assets/contact.svg' 
 
 function Contact() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import workflowSvg from './assets/workflow.svg' 
+import workflowSvg from '../../../assets/workflow.svg' 
 
 function Workflow() {
   return (

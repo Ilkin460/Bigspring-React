@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
-import companySlide1 from './assets/marketing-slide-1.png' 
-import companySlide2 from './assets/marketing-slide-2.png'
-import companySlide3 from './assets/marketing-slide-3.png'
+import companySlide1 from '../../../assets/marketing-slide-1.png' 
+import companySlide2 from '../../../assets/marketing-slide-2.png'
+import companySlide3 from '../../../assets/marketing-slide-3.png'
 
 function CompanySection() {
   const [currentSlide, setCurrentSlide] = useState(0)

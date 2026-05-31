@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import logoImg from './assets/logo.png'
+import { Link } from "react-router";
+import logoImg from '../../assets/logo.png'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,11 +14,11 @@ function Header() {
         </div>
 
         <nav className="hidden md:flex items-center gap-8 text-slate-600 font-medium">
-          <a href="#home" className="text-teal-600 border-teal-500">Home</a>
-          <a href="#blog" className="hover:text-teal-600 transition">Blog</a>
-          <a href="#pricing" className="hover:text-teal-600 transition">Pricing</a>
-          <a href="#contact" className="hover:text-teal-600 transition">Contact</a>
-          <a href="#faq" className="hover:text-teal-600 transition">FAQ</a>
+          <Link to={'/'} className="text-teal-600 border-teal-500">Home</Link>
+          <Link to={'/blog'} className="hover:text-teal-600 transition">Blog</Link>
+          <Link to={'/pricing'} className="hover:text-teal-600 transition">Pricing</Link>
+          <Link to={'/contact'} className="hover:text-teal-600 transition">Contact</Link>
+          <Link to={'/faq'} className="hover:text-teal-600 transition">FAQ</Link>
         </nav>
 
         <div className="hidden md:block">
@@ -47,11 +48,11 @@ function Header() {
 
       <div className={`absolute top-full left-0 right-0 bg-white border-b border-slate-100 shadow-lg transition-all duration-300 ease-in-out md:hidden ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
         <nav className="flex flex-col items-center p-6 gap-4 text-slate-600 font-medium text-center">
-          <a href="#home" onClick={() => setIsOpen(false)} className="text-teal-600 py-2 border-b border-slate-50 font-bold w-full">Home</a>
-          <a href="#blog" onClick={() => setIsOpen(false)} className="hover:text-slate-900 py-2 border-b border-slate-50 w-full">Blog</a>
-          <a href="#pricing" onClick={() => setIsOpen(false)} className="hover:text-slate-900 py-2 border-b border-slate-50 w-full">Pricing</a>
-          <a href="#contact" onClick={() => setIsOpen(false)} className="hover:text-slate-900 py-2 border-b border-slate-50 w-full">Contact</a>
-          <a href="#faq" onClick={() => setIsOpen(false)} className="hover:text-slate-900 py-2 w-full">FAQ</a>
+          <Link to={'/'} onClick={() => setIsOpen(false)} className="text-teal-600 py-2 border-b border-slate-50 font-bold w-full">Home</Link>
+          <Link to={'/blog'} onClick={() => setIsOpen(false)} className="hover:text-slate-900 py-2 border-b border-slate-50 w-full">Blog</Link>
+          <Link to={'/pricing'} onClick={() => setIsOpen(false)} className="hover:text-slate-900 py-2 border-b border-slate-50 w-full">Pricing</Link>
+          <Link to={'/contact'} onClick={() => setIsOpen(false)} className="hover:text-slate-900 py-2 border-b border-slate-50 w-full">Contact</Link>
+          <Link to={'/faq'} onClick={() => setIsOpen(false)} className="hover:text-slate-900 py-2 w-full">FAQ</Link>
           
           <button onClick={() => setIsOpen(false)} className="mt-2 bg-teal-500 hover:bg-teal-600 text-white font-medium px-8 py-2.5 rounded-full transition shadow-sm">
             Get Started
